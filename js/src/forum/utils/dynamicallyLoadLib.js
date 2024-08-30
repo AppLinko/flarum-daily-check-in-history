@@ -1,27 +1,27 @@
 const libs = {
   fullcalendarCore: {
-    js: '/assets/extensions/mattoid-daily-check-in-history/dist/@fullcalendar/core@6.1.8/index.global.min.js',
+    js: 'https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/index.global.min.js',
     loaded: () => typeof FullCalendar !== 'undefined',
   },
   fullcalendarLocales: {
-    js: '/assets/extensions/mattoid-daily-check-in-history/dist/@fullcalendar/core@6.1.8/locales-all.global.min.js',
+    js: 'https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/locales-all.global.min.js',
     loaded: () => typeof FullCalendar !== 'undefined' && FullCalendar.globalLocales.length > 2,
   },
   fullcalendarDayGrid: {
-    js: '/assets/extensions/mattoid-daily-check-in-history/dist/@fullcalendar/daygrid@6.1.8/index.global.min.js',
+    js: 'https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.8/index.global.min.js',
     loaded: () => typeof FullCalendar !== 'undefined' && FullCalendar.globalPlugins.find((p) => p.name === '@fullcalendar/daygrid'),
   },
   fullcalendarInteraction: {
-    js: '/assets/extensions/mattoid-daily-check-in-history/dist/@fullcalendar/interaction@6.1.8/index.global.min.js',
+    js: 'https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@6.1.8/index.global.min.js',
     loaded: () => typeof FullCalendar !== 'undefined' && FullCalendar.globalPlugins.find((p) => p.name === '@fullcalendar/interaction'),
   },
   fullcalendarList: {
-    js: '/assets/extensions/mattoid-daily-check-in-history/dist/@fullcalendar/list@6.1.8/index.global.min.js',
+    js: 'https://cdn.jsdelivr.net/npm/@fullcalendar/list@6.1.8/index.global.min.js',
     loaded: () => typeof FullCalendar !== 'undefined' && FullCalendar.globalPlugins.find((p) => p.name === '@fullcalendar/list'),
   },
 
   flatpickr: {
-    css: '/assets/extensions/mattoid-daily-check-in-history/dist/@fullcalendar/flatpickr.min.css',
+    css: 'https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css',
     js: 'https://cdn.jsdelivr.net/npm/flatpickr',
     loaded: () => typeof window.flatpickr !== 'undefined',
   },
