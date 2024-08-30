@@ -22,11 +22,6 @@ php flarum migrate
 php flarum cache:clear
 ```
 
-## Sync assets
-```sh
-php flarum assets:publish
-```
-
 ## Links
 
 - [Packagist](https://packagist.org/packages/mattoid/flarum-daily-check-in-history)

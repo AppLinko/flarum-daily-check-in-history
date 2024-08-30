@@ -49,12 +49,9 @@ export default class CheckinHistoryPage extends UserPage {
   }
 
   async getData(info, successCb, failureCb) {
-    console.log(this.user.id())
     this.history = await app.store.find('checkin/history', {
       start: info.start.toISOString(),
-      end: info.end.toISOString(),
-      username: this.user.slug(),
-      userId: this.user.id()
+      end: info.end.toISOString()
     });
 
     return this.history.payload.data.map((item) => {
