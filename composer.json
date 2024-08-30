@@ -1,6 +1,6 @@
 {
-    "name": "mattoid/flarum-daily-check-in-history",
-    "description": "daily check in history",
+    "name": "shentx/flarum-daily-check-in-history",
+    "description": "每日签到历史记录",
     "keywords": [
         "flarum"
     ],
@@ -8,18 +8,16 @@
     "license": "LPL-1.02",
     "require": {
         "flarum/core": "^1.2.0",
-        "ziiven/flarum-daily-check-in": "*"
+        "shentx/flarum-daily-check-in": "*"
     },
     "authors": [
         {
-            "name": "mattoid",
-            "email": "liufei@liufei.info",
-            "role": "Developer"
+            "name": "Shentx",
         }
     ],
     "autoload": {
         "psr-4": {
-            "Mattoid\\CheckinHistory\\": "src/"
+            "Shentx\\CheckinHistory\\": "src/"
         }
     },
     "extra": {
@@ -55,7 +53,7 @@
     "prefer-stable": true,
     "autoload-dev": {
         "psr-4": {
-            "Mattoid\\CheckinHistory\\Tests\\": "tests/"
+            "Shentx\\CheckinHistory\\Tests\\": "tests/"
         }
     },
     "scripts": {
